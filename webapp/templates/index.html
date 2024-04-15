@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Apartment Price</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="static/css/magnific-popup.css">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/slick/slick.min.css">
+    <link rel="stylesheet" href="static/slick/slick-theme.css">
+    <link rel="stylesheet" href="static/css/templatemo-upright.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Leftside bar -->
+            <div id="tm-sidebar" class="tm-sidebar">
+                <nav class="tm-nav">
+                    <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div>
+                        <div class="tm-brand-box">
+                            <h1 class="tm-brand">Apartment</h1>
+                        </div>
+                        <ul id="tm-main-nav">
+                            <li class="nav-item">
+                                <a href="#home" class="nav-link current">
+                                    <div class="triangle-right"></div>
+                                    <i class="fas fa-home nav-icon"></i>
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#gallery" class="nav-link">
+                                    <div class="triangle-right"></div>
+                                    <i class="fas fa-dollar-sign nav-icon"></i>
+                                    Predict
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#about" class="nav-link">
+                                    <div class="triangle-right"></div>
+                                    <i class="fas fa-images nav-icon"></i>
+                                    Propose
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="tm-main">
+                <!-- Home section -->
+                <div class="tm-section-wrap">
+                    <div class="tm-parallax" data-parallax="scroll" data-image-src="static/img/img-01.jpg"></div>
+                    <section id="home" class="tm-section">
+                        <h2 class="tm-text-primary">Welcome to Our Apartment Price Prediction Platform!</h2>
+                        <hr class="mb-5">
+                        <div>
+                            <p>Discover your ideal apartment and get accurate price predictions with ease. Our platform
+                                combines advanced analytics and intuitive features to streamline your search process.
+                            </p>
+
+                            <h5>Key Features:</h5>
+
+                            <ul>
+                                <li>Price Prediction: Instant estimates based on key factors like location, size, and
+                                    amenities.</li>
+                                <li>Property Listings: Explore a wide range of listings tailored to your preferences.
+                                </li>
+                                <li>Custom Recommendations: Personalized suggestions to match your needs.</li>
+                                <li>Interactive Interface: Easy-to-use filters and maps for seamless navigation.</li>
+                                <li>Expert Insights: Stay informed with valuable market insights and trends.</li>
+                            </ul>
+
+                            <h5>How It Works:</h5>
+                            <ol>
+                                <li>Input your apartment details.</li>
+                                <li>Receive instant price predictions.</li>
+                                <li>Explore listings and schedule viewings.</li>
+                                <li>Find your perfect home hassle-free.</li>
+                            </ol>
+
+                            <h5>Why Choose Us:</h5>
+                            <ul>
+                                <li>Accuracy: Trust our reliable price prediction algorithms.</li>
+                                <li>Convenience: Enjoy a streamlined search experience.</li>
+                                <li>Personalized Service: Tailored recommendations just for you.</li>
+                                <li>Trustworthiness: Transparent and reliable information.</li>
+                            </ul>
+
+                            <div class="text-right">
+                                <a href="#gallery" class="btn btn-primary tm-btn-next">Predict Price</a>
+                                <a href="#about" class="btn btn-primary tm-btn-next">Propose Apartments</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Gallery section -->
+                <div class="tm-section-wrap">
+                    <div class="tm-parallax" data-parallax="scroll" data-image-src="static/img/img-02.jpg"></div>
+                    <section id="gallery" class="tm-section">
+                        <h2 class="tm-text-primary">Predict Apartment Price</h2>
+                        <hr class="mb-5">
+                        <div class="container">
+                            <form action="#" id="form">
+                                <div class="row">
+                                    <div class="col">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td><label class="form-label m-2" for="type">Type</label></td>
+                                                    <td>
+                                                        <select class="form-control" id="type">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="form-label m-2" for="area">Area</label></td>
+                                                    <td><input class="form-control" type="number" id="area" value="0"
+                                                            placeholder="Area"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="form-label m-2" for="bedrooms">Bedrooms</label>
+                                                    </td>
+                                                    <td><input class="form-control" type="number" id="bedrooms"
+                                                            value="0" placeholder="Bedrooms"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="form-label m-2" for="bathrooms">Bathrooms</label>
+                                                    </td>
+                                                    <td><input class="form-control" type="number" id="bathrooms"
+                                                            value="0" placeholder="Bathrooms"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label class="form-label m-2" for="location">Location</label>
+                                                    </td>
+                                                    <td>
+                                                        <select class="form-control" id="location">
+                                                            {% for location in ['Cẩm Lệ', 'Hải Châu', 'Hòa Vang', 'Liên Chiểu', 'Ngũ Hành Sơn', 'Sơn Trà', 'Thanh Khê'] %}
+                                                            <option value="{{ location }}">{{ location }}</option>
+                                                            {% endfor %}
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <div class="d-flex justify-content-center mt-3">
+                                                            <button type="submit" class="btn btn-primary">Predict
+                                                                Price</button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <div id="result"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+                <!-- About section -->
+                <div class="tm-section-wrap">
+                    <div class="tm-parallax" data-parallax="scroll" data-image-src="static/img/img-03.jpg"></div>
+                    <section id="about" class="tm-section">
+                        <h2 class="tm-text-primary">Propose Apartments</h2>
+                        <hr class="mb-5">
+                        <div class="container">
+                            <form action="#" id="form_1">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td><label class="form-label m-2" for="type">Type</label></td>
+                                            <td>
+                                                <select class="form-control" id="type_1">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><label class="form-label m-2" for="area">Area</label></td>
+                                            <td><input class="form-control" type="number" id="area_1" value="0"
+                                                    placeholder="Area"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label class="form-label m-2" for="bedrooms">Bedrooms</label>
+                                            </td>
+                                            <td><input class="form-control" type="number" id="bedrooms_1" value="0"
+                                                    placeholder="Bedrooms"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label class="form-label m-2" for="bathrooms">Bathrooms</label>
+                                            </td>
+                                            <td><input class="form-control" type="number" id="bathrooms_1" value="0"
+                                                    placeholder="Bathrooms"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label class="form-label m-2" for="location">Location</label>
+                                            </td>
+                                            <td>
+                                                <select class="form-control" id="location_1">
+                                                    {% for location in ['Cẩm Lệ', 'Hải Châu', 'Hòa Vang', 'Liên Chiểu', 'Ngũ Hành Sơn', 'Sơn Trà', 'Thanh Khê'] %}
+                                                     <option value="{{ location }}">{{ location }}</option>
+                                                    {% endfor %}
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><label class="form-label m-2" for="price">Price</label>
+                                            </td>
+                                            <td><input class="form-control" type="number" id="price_1" value="0"
+                                                    placeholder="Price"></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <div class="d-flex justify-content-center mt-3">
+                                                    <button type="submit" class="btn btn-primary">Get
+                                                        propose</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
+                        <div class="justify-content-center mt-3">
+                            <div id="result_1"></div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="static/js/jquery-3.4.1.min.js"></script>
+    <script src="static/js/jquery.singlePageNav.min.js"></script>
+    <script src="static/js/parallax/parallax.min.js"></script>
+    <script src="static/js/imagesloaded.pkgd.min.js"></script>
+    <script src="static/js/isotope.pkgd.min.js"></script>
+    <script src="static/js/jquery.magnific-popup.min.js"></script>
+    <script src="static/slick/slick.min.js"></script>
+    <script src="static/js/templatemo-script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#form").submit(function (event) {
+                event.preventDefault();
+
+                var formData = {
+                    type: $("#type").val(),
+                    area: $("#area").val(),
+                    bedrooms: $("#bedrooms").val(),
+                    bathrooms: $("#bathrooms").val(),
+                    location: $("#location").val()
+                };
+
+                $.ajax({
+                    type: "POST",
+                    url: "/predict",
+                    data: JSON.stringify(formData),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (response) {
+                        $("#result").html("Giá căn hộ dự đoán là: " + response.result + " VND");
+                    },
+                    error: function (error) {
+                        console.log("Error:", error);
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#form_1").submit(function (event) {
+                event.preventDefault();
+
+                var formData = {
+                    type: $("#type_1").val(),
+                    area: $("#area_1").val(),
+                    bedrooms: $("#bedrooms_1").val(),
+                    bathrooms: $("#bathrooms_1").val(),
+                    location: $("#location_1").val(),
+                    price: $("#price_1").val()
+                };
+
+                $.ajax({
+                    type: "POST",
+                    url: "/propose",
+                    data: JSON.stringify(formData),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (response) {
+              
+                        var resultHtml = '';
+                        
+                        response.result.forEach(function (apartment) {
+                            resultHtml += '<div class="card bg-light border-primary mb-3" style="max-width: 100%;">';
+                            resultHtml += '<div class="card-header">' + apartment.ID + ' - ' + apartment.Title +'</div>';
+                            resultHtml += '<div class="card-body">';
+                            resultHtml += '<p class="card-text">';
+                            resultHtml += 'Type: ' + apartment.Type + ', Area: ' + apartment.Area + ', Bedrooms: ' + apartment.Bedrooms + ', Bathrooms: ' + apartment.Bathrooms + ', Location: ' + apartment.Location + '<br>';
+                            resultHtml += 'Price: ' + parseFloat(apartment.Price).toLocaleString('vi-VN', { style: 'currency', currency: 'VND' }) + '<br>';
+                            resultHtml += apartment.Description + '<br>';
+                            resultHtml += 'Date: ' + apartment.Date + '<br>';
+                            resultHtml += '</p>';
+                            resultHtml += '</div>';
+                            resultHtml += '</div>';
+                        });
+
+                        $("#result_1").html(resultHtml);
+
+                    },
+                    error: function (error) {
+                        console.log("Error:", error);
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                type: "GET",
+                url: "/get-scores", // Địa chỉ URL để lấy dữ liệu scores từ server
+                dataType: "json",
+                success: function (response) {
+                    var resultHtml = '';
+                    resultHtml += '<h2>Scores</h2>';
+                    resultHtml += '<p>Mean accuracy: ' + response.mean_accuracy + '</p>';
+                    resultHtml += '<ul>';
+                    response.scores.forEach(function (score, index) {
+                        resultHtml += '<li>Score ' + (index + 1) + ': ' + score + '</li>';
+                    });
+                    resultHtml += '</ul>';
+                    $("#scores-container").html(resultHtml);
+                },
+                error: function (error) {
+                    console.log("Error:", error);
+                }
+            });
+        });
+        
+    </script>
+</body>
+
+</html>
